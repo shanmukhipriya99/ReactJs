@@ -1,0 +1,3 @@
+REACT: A Js library for building User Interfaces
+React apps run in the browser and it uses components to build the user interface
+BABEL is a compiler that compiles the code to the browser level
