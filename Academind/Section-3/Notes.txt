@@ -5,3 +5,9 @@
 5) A component is a function returning some JSX
 6) { Component } should be imported only if any class is being extended
 7) In the JSX, the lowercase tags are the native tags and so the ones created by us should begin with upper-case
+8) Components can be created in two ways:
+	Functional or presentational or dumb or stateless components: doesn't extend to Component
+	Class-based or containers or smart or stateful components: extends to Component
+9) (props) looks like a single parameter but it's like an object that contains all the parameters passed, when called
+10)state is used to change the component
+
