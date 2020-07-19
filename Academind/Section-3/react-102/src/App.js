@@ -24,7 +24,7 @@ class App extends Component {
     } )
   }
 
-  nameChangedHandler = (event) => {
+  nameChangedHandler = (event) => {         // event object will directly be passed by react
     this.setState( {
       persons: [
         { name: 'Max', age: 28 },

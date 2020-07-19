@@ -9,10 +9,16 @@
 	Functional or presentational or dumb or stateless components: doesn't extend to Component
 	Class-based or containers or smart or stateful components: extends to Component
 9) (props) looks like a single parameter but it's like an object that contains all the parameters passed, when called
-10)state is used to change the component and can only be used with class-based components11) react hooks is basically a collection of functions exposed to you by react which can be used in functional components
+10) state is used to change the component and can only be used with class-based components11) react hooks is basically a collection of functions exposed to you by react which can be used in functional components
 12) useState() is one of the functions provided by hooks and can be used only for functional components. It returns exactly 2 elements in an array
 	first element: current state and updated state, whenever changed
 	second element: always a function that allows us to update this state
-13) Js allows to have a function definition inside another function 
+13) Js allows to have a function definition inside another function: can be used with hooks
+14) A stateful component is a component that manages state, no matter if it's using the useState hook or a class-based approach with the state property
+15) A component like the person.js file, this person component is a stateless component because it has no internal state management
+16) You can pass methods as props so that you can call a method which might change the state in another component/file which doesn't have direct access to the state 
+17) 
+
+
 
 
