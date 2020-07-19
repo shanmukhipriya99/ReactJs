@@ -7,7 +7,7 @@ class App extends Component {
     return (
       <div className="App">
           <h1 className="App-title">Welcome to React</h1>
-          <Person name='Shanmukhi' age='21' />
+          <Person name='Shanmukhi' age='21'> Random number generated!</Person>
       </div>
     );
   }
