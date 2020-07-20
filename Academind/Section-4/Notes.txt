@@ -1,0 +1,2 @@
+1) Js can be integrated into JSX by using '{}'
+2) 
