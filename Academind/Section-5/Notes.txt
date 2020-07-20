@@ -1,1 +1,5 @@
 1) radium is a package that can be used for pseudo selectors like :hover, etc via CSS
+2) import Radium and wrap the exported value with it
+3) For using media queries, etc { StyleRoot } should be imported additionally
+	import Radium, { StyleRoot } from 'radium';
+4) Wrap the main content with <StyleRoot></StyleRoot>, not required pseudo selectors
