@@ -9,18 +9,20 @@ class App extends Component {
       { id: '2', name: 'Manu', age: 29 },
       { id: '3', name: 'Stephanie', age: 26 }
     ],
-    otherState: 'some other value'
+    showPersons: false
   }
 
-  nameChangedHandler = (event) => {         // event object will directly be passed by react
-    this.setState( {
-      persons: [
-        { name: 'Max', age: 28 },
-        { name: event.target.value, age: 29 },
-        { name: 'Stephanie', age: 26 }
-      ],
-      showPersons: false
-    } )
+  nameChangedHandler = (event, id) => {         // event object will directly be passed by react
+    const personIndex = this.state.persons.findIndex(p => { //runs for every element in the array like map()
+      return p.id === id;  //compares the id of the elements in the array to that of the element that we clicked
+    });
+    const person = {
+      ...this.state.persons[personIndex]
+    };
+    person.name = event.target.value;
+    const persons = [...this.state.persons];
+    persons[personIndex] = person;
+    this.setState( { persons: persons } );
   }
 
   deletePersonHandler = (personIndex) => {
@@ -53,7 +55,8 @@ class App extends Component {
             click={() => this.deletePersonHandler(index)}
             name={person.name} 
             age={person.age}
-            key={person.id}/>
+            key={person.id}
+            changed={(event) => this.nameChangedHandler(event, person.id)}/>
         })}
         </div>
       );
