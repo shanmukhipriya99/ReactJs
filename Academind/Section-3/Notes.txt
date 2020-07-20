@@ -17,7 +17,11 @@
 14) A stateful component is a component that manages state, no matter if it's using the useState hook or a class-based approach with the state property
 15) A component like the person.js file, this person component is a stateless component because it has no internal state management
 16) You can pass methods as props so that you can call a method which might change the state in another component/file which doesn't have direct access to the state 
-17) 
+17) 2 ways of adding styles:
+	inline styles: can scope it to particular elements but doesn't allow you to fully use css ex: onHover, etc
+	.css files: styles are applied globally to whatever element has that className
+18) Inline styles cannot be applied to JSX directly. It has to be passed as a parameter via props
+19) 
 
 
 

@@ -1,0 +1,6 @@
+input[type=text] {
+    border: 2px solid red;
+    border-radius: 5px;
+    width: 20%;
+    box-shadow: 0 5px 5px rgb(236, 130, 130);
+}
