@@ -1,0 +1,1 @@
+1) radium is a package that can be used for pseudo selectors like :hover, etc via CSS
