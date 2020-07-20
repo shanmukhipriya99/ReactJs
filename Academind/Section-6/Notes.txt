@@ -1,0 +1,2 @@
+1) Error boundaries should only be used when the developer is sure that an error may occur but can't control it.
+2) Very useful in the production level
