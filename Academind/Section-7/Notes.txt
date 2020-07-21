@@ -1,4 +1,5 @@
 1) A functional component that manages its own state with the help of useState would also be considered a stateful component
 2) Therefore, stateful doesn't automatically mean class-based component
 3) Presentational component is a functional component that does not manage state
-4) 
+4) useEffect is the second most important react hook. It's more like a function that can be added into a functio component
+5) useEffect combines componentDidMount and componentDidUpdate
