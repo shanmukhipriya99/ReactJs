@@ -1,0 +1,4 @@
+1) A functional component that manages its own state with the help of useState would also be considered a stateful component
+2) Therefore, stateful doesn't automatically mean class-based component
+3) Presentational component is a functional component that does not manage state
+4) 
