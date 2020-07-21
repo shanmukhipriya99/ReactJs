@@ -3,3 +3,9 @@
 3) Presentational component is a functional component that does not manage state
 4) useEffect is the second most important react hook. It's more like a function that can be added into a functio component
 5) useEffect combines componentDidMount and componentDidUpdate
+6) React doesn't allow rendering more than one JSX element i.e it can have a single parent element with any number of children
+7) The way around this is to use return []; instead of return(); and separate the elements with ','
+    In this way, we will be returning an array of elements and this is allowed as it is a single parent element, ultimately
+    But each of these elements must have a key property (can be done manually)
+8) Another way is to use Auxiliary.js with props.children (much easier)
+9) After creating Auxiliary.js, <Aux></Aux> can also be replaced with <React.Fragment></React.Fragment> or <Fragment></Fragment> if Fragment is imported from react
