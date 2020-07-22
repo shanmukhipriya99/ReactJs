@@ -1,0 +1,2 @@
+1) Component folder: deals with stateful components
+2)  Container folder: deals with stateless components
