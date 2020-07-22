@@ -1,2 +1,3 @@
 1) Component folder: deals with stateful components
-2)  Container folder: deals with stateless components
+2) Container folder: deals with stateless components
+3) prop-types can be used for functional components as well
