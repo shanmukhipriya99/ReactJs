@@ -1,4 +1,5 @@
 import React from 'react';
+import BuildControl from '../'
 
 const buildControls = (props) => (
     <div>
