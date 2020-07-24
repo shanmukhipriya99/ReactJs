@@ -1,0 +1,1 @@
+1) Interceptors: these are functions you can define globally which will be executed for every request leaving your app and every response returning into it
