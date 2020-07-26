@@ -1,0 +1,4 @@
+1) react-router and react-router-dom should be installed for routing purposes
+    Was not built by FaceBook
+2) only react-router-dom is required for web development
+    It wraps react-router and therefore uses it as a dependency
