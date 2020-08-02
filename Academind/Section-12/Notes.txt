@@ -1,0 +1,14 @@
+1) Components loaded through <Router /> have access to props with history, location, and match 
+2) The child components of the parent will not have access to these special props
+3) There is a special higher order component named withRouter that allows us to pass these special props
+4) We need to import withRouter from react-router-dom and also wrap the export statement with it
+5) history is one of these special props provided by the router and there we have this push prop which allows us 
+   to basically switch the page and push a new page onto that stack of pages
+   this.props.history.push('/..')
+6) this.props.history.goBack()
+   this.props.history.replace()
+   this.props.histroy.push()
+7) encodeURIComponent() -> encodes elements such that they can be used in the URL (removes whitespace, etc) 
+8) URLSearchParams(this.props.location.search) ---???
+9) query.entries() ---???
+10)
