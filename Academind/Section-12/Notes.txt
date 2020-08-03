@@ -11,4 +11,7 @@
 7) encodeURIComponent() -> encodes elements such that they can be used in the URL (removes whitespace, etc) 
 8) URLSearchParams(this.props.location.search) ---???
 9) query.entries() ---???
-10)
+10)<Route path='/' component={component}
+   <Route path='/' render={() => (<Component />)} => in this way, we can pass props directly, if required
+11)The special props are not accessible if we are passing the component manually by rendering in <Route />
+   render{(props) => (<Component {...props}/>)} => to pass the special props

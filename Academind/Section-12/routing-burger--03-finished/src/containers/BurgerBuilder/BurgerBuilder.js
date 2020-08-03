@@ -118,7 +118,7 @@ class BurgerBuilder extends Component {
 
         if ( this.state.ingredients ) {
             burger = (
-                <Aux>
+                <>
                     <Burger ingredients={this.state.ingredients} />
                     <BuildControls
                         ingredientAdded={this.addIngredientHandler}
@@ -127,7 +127,7 @@ class BurgerBuilder extends Component {
                         purchasable={this.state.purchasable}
                         ordered={this.purchaseHandler}
                         price={this.state.totalPrice} />
-                </Aux>
+                </>
             );
             orderSummary = <OrderSummary
                 ingredients={this.state.ingredients}
@@ -140,12 +140,12 @@ class BurgerBuilder extends Component {
         }
         // {salad: true, meat: false, ...}
         return (
-            <Aux>
+            <>
                 <Modal show={this.state.purchasing} modalClosed={this.purchaseCancelHandler}>
                     {orderSummary}
                 </Modal>
                 {burger}
-            </Aux>
+            </>
         );
     }
 }
