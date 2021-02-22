@@ -1,0 +1,14 @@
+npm i --save red
+1. Redux is a 3rd-party library which works totally indepenent of React.
+2. Central Store: stores the entire application state.
+3. Uses the node.js syntax when not linked to react.
+4. Reducer is a pure function.
+5. Mulitple reducers will be combined into a single reducer.
+6. Reducer needs to be created before the store as it is passed as an argument to the store.
+7. Reducer receives the state (old state) and the action. It returns the updated state.
+8. The dispatch function can contain any parameters with any name, but the first one always has to be "type".
+9. Never mutate the state directly, always create a copy of it (prefereably with the spread operator) and 
+   work on the new copy.
+10.To subscribe, a subscribe function is used which takes one parameter. A function that gets executed whenever the 
+   the state is updated (This function doesn't get any arguments).
+11. Subscription should be set up after the store is created.
