@@ -9,6 +9,12 @@ npm i --save red
 8. The dispatch function can contain any parameters with any name, but the first one always has to be "type".
 9. Never mutate the state directly, always create a copy of it (prefereably with the spread operator) and 
    work on the new copy.
-10.To subscribe, a subscribe function is used which takes one parameter. A function that gets executed whenever the 
-   the state is updated (This function doesn't get any arguments).
+10. To subscribe, a subscribe function is used which takes one parameter. A function that gets executed whenever the 
+    the state is updated (This function doesn't get any arguments).
 11. Subscription should be set up after the store is created.
+12. npm i --save react-redux: for connecting store to react.
+13. Wrap the <App /> component with <Provider>. Provider is a helper component which allows us to kind of inject our 
+    store into the react components.
+14. npm update react react-dom
+15. npm install --save react-redux@5.1.2 
+
