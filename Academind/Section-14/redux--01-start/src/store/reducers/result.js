@@ -1,4 +1,4 @@
-import * as actionTypes from './actions';
+import * as actionTypes from '../actions';
 
 const initialState = {
     counter: 0,
@@ -6,34 +6,10 @@ const initialState = {
 }
 
 const reducer = (state = initialState, action) => {
-    if(actionTypes.INCREMENT){
-        return {
-            ...state,
-            counter: state.counter + 1
-        }
-    }
-    if(actionTypes.DECREMENT){
-        return {
-            ...state,
-            counter: state.counter - 1
-        }
-    }
-    if(actionTypes.ADD){
-        return {
-            ...state,
-            counter: state.counter + action.value
-        }
-    }
-    if(actionTypes.SUB){
-        return {
-            ...state,
-            counter: state.counter - action.value
-        }
-    }
     if(actionTypes.STORE_RESULT){
         return {
             ...state,
-            result: state.result.concat({id: new Date(),value: state.counter})  //push() also does the same thing but mutates the original array
+            result: state.result.concat({id: new Date(),value: action.result})  //push() also does the same thing but mutates the original array
         }         // whereas concat() returns a new array (old array + changes made)
     }
     if(actionTypes.DELETE_RESULT){
