@@ -9,7 +9,7 @@
     "mem": "^4.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "1.1.5",
+    "react-scripts": "5.0.1",
     "webpack-dev-server": "^3.1.11"
   },
   "scripts": {
