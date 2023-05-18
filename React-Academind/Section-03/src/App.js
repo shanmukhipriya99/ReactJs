@@ -22,12 +22,13 @@ function App() {
       date: new Date(2021, 5, 12),
     },
   ];
+  // {expenses.map((exp) => {
+  //   return <Expenses expense={exp}></Expenses>;
+  // })}
   return (
     <div>
       <h2>Let's get started!</h2>
-      {expenses.map((exp) => {
-        return <Expenses expense={exp}></Expenses>;
-      })}
+      <Expenses expenses={expenses} />;
     </div>
   );
 }
