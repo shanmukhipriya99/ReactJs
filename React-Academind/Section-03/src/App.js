@@ -26,9 +26,12 @@ function App() {
   // {expenses.map((exp) => {
   //   return <Expenses expense={exp}></Expenses>;
   // })}
+  const addExpenseHandler = (expense) => {
+    console.log(expense);
+  };
   return (
     <div>
-      <NewExpense />
+      <NewExpense onAddExpense={addExpenseHandler} />
       <Expenses expenses={expenses} />;
     </div>
   );
