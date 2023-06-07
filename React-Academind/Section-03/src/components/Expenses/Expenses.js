@@ -3,6 +3,7 @@ import ExpensesFilter from './ExpensesFilter';
 import Card from '../UI/Card';
 import { useState } from 'react';
 import ExpensesList from './ExpensesList';
+import ExpensesChart from './ExpensesChart';
 
 function Expenses(props) {
   const [year, setYear] = useState('2022');
@@ -15,10 +16,10 @@ function Expenses(props) {
     (expense) => expense.date.getFullYear() === parseInt(year)
   );
 
-
   return (
     <Card className='expenses'>
       <ExpensesFilter selected={year} onYearSelected={selectedYearHandler} />
+      <ExpensesChart expenses={filteredExpenses} />
       <ExpensesList expenses={filteredExpenses} />
     </Card>
   );
