@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './UserForm.css';
+import ErrorModal from './UI/ErrorModal';
 
 const UserForm = (props) => {
   const [username, setUsername] = useState('');
@@ -33,20 +34,23 @@ const UserForm = (props) => {
     setAge('');
   };
   return (
-    <form onSubmit={formSubmitHandler}>
-      <div className='user-form'>
-        <label htmlFor='username'>Username:</label>
-        <input
-          id='username'
-          type='text'
-          value={username}
-          onChange={usernameHandler}
-        />
-        <label htmlFor='age'>Age (Years):</label>
-        <input id='age' type='number' value={age} onChange={ageHandler} />
-        <button type='submit'>Add User</button>
-      </div>
-    </form>
+    <>
+      <ErrorModal title='fh' message='tyj' />
+      <form onSubmit={formSubmitHandler}>
+        <div className='user-form'>
+          <label htmlFor='username'>Username:</label>
+          <input
+            id='username'
+            type='text'
+            value={username}
+            onChange={usernameHandler}
+          />
+          <label htmlFor='age'>Age (Years):</label>
+          <input id='age' type='number' value={age} onChange={ageHandler} />
+          <button type='submit'>Add User</button>
+        </div>
+      </form>
+    </>
   );
 };
 
