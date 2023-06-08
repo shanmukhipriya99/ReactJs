@@ -2,17 +2,16 @@
   /* color: aqua; */
   /* display: flex; */
   /* justify-content: center; */
-  /* background-color: white; */
-  width: 35rem;
-  max-width: 90%;
-  margin: 3rem auto;
+  background-color: white;
+  width: 90%;
+  max-width: 40rem;
+  margin: 2rem auto;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  margin-bottom: 1rem;
-  padding: 3rem;
+  padding: 1rem;
   text-align: left;
 }
 
@@ -23,20 +22,34 @@
 }
 
 .user-form input {
+  font: inherit;
   display: block;
   width: 100%;
   border: 1px solid #ccc;
-  font: inherit;
-  line-height: 1.5rem;
-  padding: 0 0.25rem;
+  padding: 0.15rem;
+  margin-bottom: 0.5rem;
+}
+
+.user-form input:focus {
+  outline: none;
+  border-color: #4f005f;
 }
 
 .user-form button {
-  font: inherit;
-  padding: 0.5rem 1.5rem;
-  border: 1px solid #8b005d;
-  color: white;
-  background: #8b005d;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.26);
-  cursor: pointer;
+    font: inherit;
+    border: 1px solid #4f005f;
+    background: #ddb1e6;
+    color: white;
+    padding: 0.25rem 1rem;
+    cursor: pointer;
+}
+
+.user-form button:hover,
+.user-form button:active {
+  background: #741188;
+  border-color: #741188;
+}
+
+.user-form button:focus {
+  outline: none;
 }

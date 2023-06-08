@@ -3,7 +3,9 @@ import React from 'react';
 import './Card.css';
 
 const Card = (props) => {
-    return <li>{`${props.username} (${props.age} years old)`}</li>
+    return <div className='card'>
+    <li>{`${props.username} (${props.age} years old)`}</li>
+    </div>
 };
 
 export default Card;

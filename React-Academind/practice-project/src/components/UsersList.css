@@ -1,0 +1,9 @@
+.users {
+  margin: 2rem auto;
+  width: 60%;
+  max-width: 40rem;
+}
+
+.users ul {
+  padding: 1rem;
+}
