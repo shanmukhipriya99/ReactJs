@@ -3,11 +3,11 @@ import ReactDOM from 'react-dom/client';
 
 import './index.css';
 import App from './App';
-import AuthContext from './store/auth-context';
+import {AuthContextProvider} from './store/auth-context';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <AuthContext>
+  <AuthContextProvider>
     <App />
-  </AuthContext>
+  </AuthContextProvider>
 );
