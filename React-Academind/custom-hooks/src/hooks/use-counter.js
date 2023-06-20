@@ -9,6 +9,7 @@ const useCounter = () => {
     }, 1000);
     return () => clearInterval(interval);
   }, []);
+  return counter;
 };
 
 export default useCounter;
