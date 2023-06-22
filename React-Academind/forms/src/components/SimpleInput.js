@@ -1,34 +1,31 @@
 import { useRef, useState } from 'react';
 
 const SimpleInput = (props) => {
-  const nameRef = useRef();
+  // const nameRef = useRef();
   const [enteredName, setEnteredName] = useState('');
-  const [nameIsValid, setNameIsValid] = useState(false);
+  // const [nameIsValid, setNameIsValid] = useState(false);
   const [nameInputTouched, setNameInputTouched] = useState(false);
+
+  const nameIsValid = enteredName.trim() !== '';
+  const nameInputIsInvalid = !nameIsValid && nameInputTouched;
 
   const nameChangeHandler = (event) => {
     setEnteredName(event.target.value);
   };
   const nameBlurHandler = (event) => {
     setNameInputTouched(true);
-    if (enteredName.trim() == '') {
-      setNameIsValid(false);
-    }
   };
   const formSubmitHandler = (event) => {
     event.preventDefault();
     setNameInputTouched(true);
-    if (enteredName.trim() == '') {
-      setNameIsValid(false);
+    if (!nameIsValid) {
+      return;
     }
-    setNameIsValid(true);
     console.log(enteredName);
-    console.log(nameRef.current.value);
+    // console.log(nameRef.current.value);
     setEnteredName('');
     setNameInputTouched(false);
   };
-
-  const nameInputIsInvalid = !nameIsValid && nameInputTouched;
 
   const nameInputClass = !nameInputIsInvalid
     ? 'form-control'
@@ -39,7 +36,7 @@ const SimpleInput = (props) => {
       <div className={nameInputClass}>
         <label htmlFor='name'>Your Name</label>
         <input
-          ref={nameRef}
+          // ref={nameRef}
           type='text'
           id='name'
           value={enteredName}
