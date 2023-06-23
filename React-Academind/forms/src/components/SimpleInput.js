@@ -58,7 +58,7 @@ const SimpleInput = (props) => {
     event.preventDefault();
     // setNameInputTouched(true);
     // setEmailInputTouched(true);
-    if (!nameInputIsValid || !emailInputIsValid) {
+    if (!formIsValid) {
       return;
     }
     console.log(enteredName);
